@@ -1,0 +1,68 @@
+{
+  "333333": {
+    "tenantId": "333333",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "c356a290baf0c07e4c02b4ba618f9255:e50378ab6ee28cc55444088e838e1801",
+    "encryptedPaypalSecret": "c356a290baf0c07e4c02b4ba618f9255:891af83acac87f52620862faf7667444"
+  },
+  "7777777": {
+    "tenantId": "7777777",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "e36f3cc1d02d2817b792ecfb30dd4162:711fcd395d856a67809ea963da51dfa4",
+    "encryptedPaypalSecret": "e36f3cc1d02d2817b792ecfb30dd4162:09a31db121cdbc1f1ceecb196e03c346"
+  },
+  "555566666": {
+    "tenantId": "555566666",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "8d4750ea1139c5f599d8b00f650e7e19:a29ab87800876320a8e1ab0e2ff7d4c7",
+    "encryptedPaypalSecret": "8d4750ea1139c5f599d8b00f650e7e19:f6e78a4a69b34fe067e9a2f47c87dd01"
+  },
+  "helpinghands": {
+    "tenantId": "helpinghands",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "c95f333dd5d2f8ca665ad2a7c0c76ffc:0aa11f325cb14791a8eadf56d60a3295",
+    "encryptedPaypalSecret": "c95f333dd5d2f8ca665ad2a7c0c76ffc:a68812ecad62fc9d34595a7c542c508b"
+  },
+  "helpinghands_2": {
+    "tenantId": "helpinghands_2",
+    "preferredProcessor": "paypal_2"
+  },
+  "abccd": {
+    "tenantId": "abccd",
+    "preferredProcessor": "nnnn"
+  },
+  "pqrs": {
+    "tenantId": "pqrs",
+    "preferredProcessor": "stripe",
+    "encryptedStripeKey": "c95f333dd5d2f8ca665ad2a7c0c76ffc:feec49d937c6eea74152a75c42d3034c135df24dd60ae1a4945281aac5614d42"
+  },
+  "pqrs22": {
+    "tenantId": "pqrs22",
+    "preferredProcessor": "stripe",
+    "encryptedStripeKey": "c356a290baf0c07e4c02b4ba618f9255:57a2aa40c5d76a2a5e3393e0127a176b034d71cc6dac21545ffcb75d205c4336"
+  },
+  "paypal_new_tenant": {
+    "tenantId": "paypal_new_tenant",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:c0bcc5fb33fd87e0da85c7e00a512d01",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:62cfb26e10212ec0a0fd56a3500498f3"
+  },
+  "viewer_tenant": {
+    "tenantId": "viewer_tenant",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:81236cf77992a84a5223f9300722641c",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:233303f0978c7d87f3d918239e215a54"
+  },
+  "viewer_tenant_2_created_by_admin_token": {
+    "tenantId": "viewer_tenant_2_created_by_admin_token",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:b5e6f55ce2974088afb8b12a287cb69f",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:3ca5b6ba72ce693be557b8c2191b3c9a"
+  },
+  "viewer_tenant_3_created_by_admin_token": {
+    "tenantId": "viewer_tenant_3_created_by_admin_token",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:ae66b024394dc0feecc309c39a0fc75d",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:4c275e0ce501f5753cffbd9a7980647a"
+  }
+}
