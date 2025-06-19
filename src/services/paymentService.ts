@@ -10,7 +10,6 @@ export async function processPayment(
   currency: string,
   source: string
 ): Promise<{ success: boolean; transactionId: string; message: string }> {
-    console.log('SHAN tenant====', tenant);
   switch (tenant.preferredProcessor) {
     case 'stripe': {
       // Decrypt stripe key

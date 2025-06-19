@@ -19,7 +19,7 @@ interface AuthRequest extends Request {
 
   router.post('/tenants/create', requireRole('admin'),(req: Request, res: Response): void => {
     const { tenantId, preferredProcessor = 'stripe' } = req.body;
-     console.log('SHAN req.body====', req.body);
+
     if (!tenantId) {
       res.status(400).json({ error: 'tenantId is required' });
       return;
@@ -63,7 +63,7 @@ router.post('/tenants/:tenantId/pay', authenticateJWT, requireRole('admin'), req
   }
 
   try {
-    console.log('PSSSS rocessing payment for tenant:', tenant?.tenantId);
+    console.log('Processing payment for tenant:', tenant?.tenantId);
     const result = await processPayment(tenant!, amount, currency, source);
     res.status(result.success ? 200 : 402).json({
         ...result,

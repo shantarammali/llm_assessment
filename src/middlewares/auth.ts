@@ -39,11 +39,8 @@ export function authenticateJWT(req: Request, res: Response, next: NextFunction)
 }
 
 // ✅ Role Guard
-export function requireRole(role: 'admin' | 'viewer') {
-    console.log('SHAN role====', role);
-    
+export function requireRole(role: 'admin' | 'viewer') {    
   return (req: Request, res: Response, next: NextFunction): void => {
-    console.log('SHAN req.body====', req.body.user.role);
     if (req.body.user?.role !== role) {
       res.status(403).json({ error: 'Access denied: insufficient role' });
       return;
@@ -56,9 +53,6 @@ export function requireRole(role: 'admin' | 'viewer') {
 export function requireTenantAccess() {
   return (req: Request, res: Response, next: NextFunction): void => {
     const { tenantId } = req.params;
-    console.log('SHAN tenantId====', tenantId);
-    console.log('SHAN req.user?.tenants====', req.user?.tenants);
-    console.log('SHAN req.user====', req.user);
     if (!tenantId || !req.user?.tenants.includes(tenantId)) {
       res.status(403).json({ error: 'Access denied: tenant restricted' });
       return;
