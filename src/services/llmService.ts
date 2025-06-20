@@ -5,6 +5,15 @@ const openai = new OpenAI({
 // services/llmService.ts
 const explanationCache = new Map<string, string>();
 
+/**
+ * Retrieves an LLM explanation for a given prompt with caching support.
+ * If the explanation has been previously generated for the same prompt,
+ * it returns the cached version to improve performance and reduce API calls.
+ * 
+ * @param prompt - The input prompt to generate an explanation for
+ * @returns Promise<string> - The LLM-generated explanation
+ */
+
 export async function getLLMExplanation(prompt: string): Promise<string> {
   if (explanationCache.has(prompt)) {
     return explanationCache.get(prompt)!;
@@ -25,10 +34,8 @@ async function callLLMWithFallback(prompt: string): Promise<string> {
 }
 
 async function callOpenAI(prompt: string): Promise<string> {
-  // Replace with real OpenAI fetch using your API key
-  //return `OpenAI says: Risk explanation for ${prompt}`;
   const response = await openai.chat.completions.create({
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o-mini',
     messages: [{ role: 'user', content: prompt }],
     max_tokens: 100,
   });

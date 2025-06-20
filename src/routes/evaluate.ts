@@ -13,7 +13,7 @@ const scoreStats = {
 router.post('/evaluate-risk', async (req: express.Request, res: express.Response): Promise<void> => {
   const { amount, currency, ip, deviceFingerprint, email } = req.body;
 
-  const {score, factors} = calculateScore(amount, ip, deviceFingerprint, email);
+  const { score, factors } = calculateScore(amount, ip, deviceFingerprint, email);
   const riskLevel = getRiskLevel(score);
   scoreStats[riskLevel] += 1;
 
@@ -32,7 +32,7 @@ ${factors.join(', ')}.`;
   //const prompt = `Evaluate fraud risk for email ${email}, amount ${amount}, IP ${ip}, and device ${deviceFingerprint}.`;
   const explanation = await getLLMExplanation(prompt);
 
-   res.json({ score, riskLevel, explanation });
+  res.json({ score, riskLevel, explanation });
 });
 
 router.get('/fraud-stats', (req, res) => {

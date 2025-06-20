@@ -64,5 +64,17 @@
     "preferredProcessor": "paypal",
     "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:ae66b024394dc0feecc309c39a0fc75d",
     "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:4c275e0ce501f5753cffbd9a7980647a"
+  },
+  "viewer_tenant_3_created_by_admin_token_1": {
+    "tenantId": "viewer_tenant_3_created_by_admin_token_1",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:d3b93cbbb325b09fe37959ee0d66d312",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:39b8140243e49005834873596f10be61"
+  },
+  "paypal_tenant_123": {
+    "tenantId": "paypal_tenant_123",
+    "preferredProcessor": "paypal",
+    "encryptedPaypalClientId": "29a6acbf4e969bffe851d88cdaff979c:507d37ce5fb963e38302e64e6b304b22",
+    "encryptedPaypalSecret": "29a6acbf4e969bffe851d88cdaff979c:4c923a9e6a711b62c7ac2bf0a2a934f7"
   }
 }

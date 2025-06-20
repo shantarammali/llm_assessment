@@ -3,7 +3,7 @@
       "username": "alice",
       "password": "$2b$10$IlcdbIp/rPxFg4Z5GluN/O2WbMSssTXXHle8YnmQO.Xf2IDN950IK", 
       "role": "admin",
-      "tenants": ["helpinghands", "savetrees","7777777","555566666","paypal_new_tenant"]
+      "tenants": ["helpinghands", "savetrees","7777777","555566666","paypal_new_tenant","viewer_tenant","paypal_tenant_123"]
     },
     {
       "username": "bob",

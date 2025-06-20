@@ -1,0 +1,23 @@
+{
+  "circuitBreakers": {
+    "paypal_new_tenant:paypal": {
+      "state": "CLOSED",
+      "failures": 0,
+      "lastOpened": 0,
+      "history": [
+        {
+          "timestamp": 1750398921703,
+          "success": true
+        },
+        {
+          "timestamp": 1750398922759,
+          "success": true
+        }
+      ]
+    }
+  },
+  "lastSummaries": {
+    "paypal_new_tenant:paypal": "That's great news! It sounds like the payment system is running smoothly without any issues due to provider instability. If the circuit breaker is closed, it means that the system is functioning as expected and there are no ongoing issues that would cause payment attempts to fail. This is a positive sign that transactions are being processed successfully."
+  },
+  "timestamp": 1750398963208
+}

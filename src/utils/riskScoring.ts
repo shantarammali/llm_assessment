@@ -1,4 +1,3 @@
-// utils/riskScoring.ts
 
 export function calculateScore(amount: number, ip: string, device: string, email: string): { score: number, factors: string[] } {
     let score = 0;
@@ -10,16 +9,15 @@ export function calculateScore(amount: number, ip: string, device: string, email
     if (amount > 1000) {
         score += 0.3;
         factors.push('high transaction amount');
-    } 
+    }
     if (ip === '198.51.100.22' || device === 'abc123') {
         score += 0.3;
-    } 
+    }
     return { score: Math.min(score, 1), factors };
-  }
-  
-  export function getRiskLevel(score: number): 'low' | 'moderate' | 'high' {
+}
+
+export function getRiskLevel(score: number): 'low' | 'moderate' | 'high' {
     if (score < 0.3) return 'low';
     if (score < 0.7) return 'moderate';
-    return 'high';  
+    return 'high';
 }
-  
